@@ -1,0 +1,213 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding: 0;
+}
+/* Css variable */
+:root{
+    --navbar-height:20px;
+}
+/* Navigation Bar */
+#navbar{
+    display:flex;
+    align-items: center;
+    position:absolute;
+    top: 0px;
+}
+/* Navigation Bar:Logo and image */
+#logo{
+    margin: 10px 30px;
+}
+#logo img{
+    margin: 7px 8px;
+    height: 60px;
+}
+/* Navigation Bar:List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Ramaraja', serif;
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: rgb(15, 48, 236);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+     text-decoration: none;
+    
+}
+#navbar ul li a:hover{
+    color: rgb(82, 78, 78);
+    background-color:white
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    height:590px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('https://media.istockphoto.com/photos/healthy-food-and-copy-space-picture-id516504314?k=20&m=516504314&s=612x612&w=0&h=wlOZFiYmKh2mKZQDIqF7ZFeA4UYTd-_kMkt2YDxsbo0=') no-repeat center center/cover;
+    height: 590px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:1;
+   
+}
+#home h1{
+    color:black;
+    text-align: center;
+}
+#home p{
+    color:black;
+    width: 30%;
+}
+
+/* Services Section */
+#service{
+    margin: 30px;
+    display: flex;
+}
+#service .box{
+    border: 2px solid brown;
+    margin:5px 80px;
+    padding: 30px;
+    border-radius: 23px;
+    background-color: rgb(237, 227, 227);
+    box-shadow:5px 5px 5px 5px  rgba(225, 119, 43, 0.375);
+}
+#service .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Ramaraja', serif;
+}
+/* Clients Section */
+#client-section{
+    height: 344px;
+}
+#client-section::before{
+    content:" ";
+    position: absolute;
+    background: url('https://media.istockphoto.com/photos/wooden-tabletop-over-defocused-kitchen-background-picture-id1071414426?k=20&m=1071414426&s=612x612&w=0&h=tS9t_WsbTv_VPGRkW05YAPc37mJK8hfRJKapJ69HTy0=');
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    opacity:0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height:120px;
+}
+.client-item{
+    padding:30px;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity:0.3;
+    background: url('https://media.istockphoto.com/photos/digital-marketing-concept-online-advertisement-picture-id1284549946?k=20&m=1284549946&s=612x612&w=0&h=VVGNI_vARpvpqo2Md_xsfcSiotjVVjzisV75dF15T-0=');
+}
+#contact-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 34px;
+}
+#contact-box form{
+    width: 30%;
+}
+#contact-box label{
+    font-family: 'Ramaraja', serif;
+}
+#contact-box input , textarea{
+    width: 100%;
+    padding:0.5rem;
+    border-radius: 9px;
+}
+
+footer{
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+/* utility class */
+.h-primary{
+    font-family: 'Ramaraja', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Ramaraja', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+h1{
+    text-align: center;
+    color: black;
+}
+h2{
+    text-align: center;
+}
+
+#btn{
+    padding: 6px 20px;
+    background: 2px solid black;
+    background-color:rgb(240, 216, 216);
+    cursor: pointer;
+    margin: 50px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+}
+#btn2{
+    padding: 5px 15px;
+    background: 2px solid black;
+    background-color:white;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#btn:hover{
+    color: black;
+    background-color: rgb(151, 151, 240);
+}
+.container{
+    text-align: center;
+}
+
+
+
